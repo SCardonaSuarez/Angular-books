@@ -3,6 +3,9 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { ClubModule } from './club/club.module';
+import { SharedModule } from './shared/shared.module';
+import { RouterModule } from '@angular/router';
+import { AppRouterModule } from './app-router.module';
 
 @NgModule({
   declarations: [
@@ -11,7 +14,10 @@ import { ClubModule } from './club/club.module';
   ],
   imports: [
     BrowserModule,
-    ClubModule
+    RouterModule,
+    AppRouterModule,
+    ClubModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]

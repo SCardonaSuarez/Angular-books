@@ -1,15 +1,21 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { BookListComponent } from './books/book-list/book-list.component';
+import { AddBookComponent } from './add-book/add-book.component';
+import { HomeComponent } from './home/home.component';
 
 
 
 @NgModule({
   declarations: [
-    BookListComponent
+    BookListComponent,
+    AddBookComponent,
+    HomeComponent
   ],
   exports:[
-    BookListComponent
+    BookListComponent,
+    AddBookComponent,
+    HomeComponent
   ],
   imports: [
     CommonModule
